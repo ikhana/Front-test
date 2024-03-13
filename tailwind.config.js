@@ -6,44 +6,44 @@ module.exports = {
     extend: {
       colors: {
         'cybernoir': {
-          '50': '#fdf8f3',
-          '100': '#f6e8dc',
-          '200': '#ecd1b8',
-          '300': '#e1b994',
-          '400': '#d6a170',
-          '500': '#cc8a4c',
-          '600': '#b3733e',
-          '700': '#99602f',
-          '800': '#804e21',
-          '900': '#663d16'
+          '50': '#f3f8fd',
+          '100': '#e6f1fc',
+          '200': '#b8daf8',
+          '300': '#8ac2f5',
+          '400': '#5caaf1',
+          '500': '#2e91ee',
+          '600': '#2677c7',
+          '700': '#1f5d9f',
+          '800': '#174478',
+          '900': '#102c51'
         },
-        'angryduck': {
-          '50': '#fff7e6',
-          '100': '#ffeccc',
-          '200': '#ffda99',
-          '300': '#ffc766',
-          '400': '#ffb533',
-          '500': '#ffa300',
-          '600': '#cc8400',
-          '700': '#996300',
-          '800': '#664200',
-          '900': '#332100'
+        'coolgray': {
+          '50': '#f9fafb',
+          '100': '#f3f4f6',
+          '200': '#e5e7eb',
+          '300': '#d1d5db',
+          '400': '#9ca3af',
+          '500': '#6b7280',
+          '600': '#4b5563',
+          '700': '#374151',
+          '800': '#1f2937',
+          '900': '#111827'
         },
         'marketing': '#f57c00',
         'liquidity': '#ffb74d',
         'presale': '#ffe0b2'
       },
       backgroundImage: {
-        'cybernoir-gradient': 'linear-gradient(to bottom, var(--tw-color-opacity, #37201F) 20%, var(--tw-color-opacity, #6E5517) 100%)',
+        'cybernoir-gradient': 'linear-gradient(to bottom, var(--tw-color-opacity, #8ac2f5) 20%, var(--tw-color-opacity, #2e91ee) 100%)',
       },
       boxShadow: {
-        'glow': '0 4px 6px rgba(255, 163, 0, 0.5)',
-        'soft-glow': '0 2px 8px rgba(255, 163, 0, 0.2)',
-        'button-glow': '0 0 15px 5px rgba(255, 163, 0, 0.6)'
+        'glow': '0 4px 6px rgba(46, 145, 238, 0.5)',
+        'soft-glow': '0 2px 8px rgba(46, 145, 238, 0.2)',
+        'button-glow': '0 0 15px 5px rgba(46, 145, 238, 0.6)'
       },
       fontFamily: {
-        sans: ['"Exo 2"', 'sans-serif'], // Suggesting Exo 2 for a techy and modern feel
-        display: ['"Bebas Neue"', 'sans-serif'] // Bebas Neue for bold, attention-grabbing headings
+        sans: ['"Inter"', 'sans-serif'],
+        display: ['"Poppins"', 'sans-serif']
       },
       borderRadius: {
         '4xl': '2rem'
