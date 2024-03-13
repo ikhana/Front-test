@@ -1,0 +1,111 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Use min-height if you want the container to grow with content */
+    position: relative;
+    color: white;
+    padding: 20px; /* Add some padding */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+  
+  .header-image-container {
+    position: relative;
+    width: 70vh; /* Adjust based on your requirement */
+    height: 70vh; /* Same as width for a circle */
+    max-width: 700px; /* Max image container width */
+    max-height: 700px; /* Same as max-width for a circle */
+    margin-top: -100px ; /* Center it horizontally */
+  }
+  
+  .header-image {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height automatically */
+   
+  }
+  
+  .header-text-container {
+    position:relative;
+    bottom: 70px; /* Start from the bottom */
+    right: -200px; /* Start from the right */
+    text-align: right; /* Align text to the right */
+    padding-right: -2000px; /* Padding to not overlap the container edges */
+  }
+  
+  .header-buttons {
+    position: relative;
+    bottom: 20px; /* Button position from the bottom */
+    left: 70%; /* Center horizontally */
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  .header-button {
+    padding: 8px 16px; /* Adjust padding for a better aspect ratio */
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ffa500; /*
+/* Continue button styles */
+color: white; /* White text */
+cursor: pointer; /* Pointer cursor on hover */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-button:hover {
+background-color: #cc8400; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    .header-image-container {
+      margin-top: -100px;
+      width: 60vh; /* Smaller image size on tablets */
+      height: 60vh;
+    }
+  
+    .header-text-container {
+      bottom: 70px; /* Lower text position on tablets */
+      right: 20%; /* Keep text from the right edge */
+      padding-right: 0; /* Remove extra padding */
+      text-align: left; /* Align text to left */
+    }
+  
+    .header-buttons {
+      margin-bottom: -100px;
+      /* Position buttons slightly higher on tablets */
+    }
+  
+    .header-button {
+      padding: 6px 12px; /* Smaller buttons on tablets */
+      font-size: 0.8rem; /* Smaller font size on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-image-container {
+      width: 100vw; /* Use viewport width for small screens */
+      height: 100vw; /* Keep aspect ratio */
+    }
+  
+    .header-text-container {
+      bottom: 0px; /* Lower text position on mobile */
+      right: 3%; /* Closer to the edge on mobile */
+      text-align: center; /* Center align text on mobile */
+    }
+  
+    .header-buttons {
+      bottom: -40px; /* Position buttons higher on mobile */
+      left: 65%; /* Center horizontally */
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 5px; /* Spacing between stacked buttons */
+    }
+  
+    .header-button {
+      padding: 5px 10px; /* Adjust button padding on mobile */
+      font-size: 0.75rem; /* Adjust font size on mobile */
+      width: 80%; /* Make buttons full width of the container */
+      max-width: 250px; /* Max button width */
+    }
+  }
+  

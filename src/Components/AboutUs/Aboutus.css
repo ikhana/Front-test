@@ -52,6 +52,14 @@
   .about {
       height: fit-content;
   }
+  .about-image {
+    width: 100%; /* Adjust width as needed */
+    max-width: 1100px; /* Adjust max-width as needed */
+    height: 200px; /* Keep height proportional */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    position: relative; /* Position relative to the glass-effect container */
+    bottom: -4rem; /* Adjust bottom position as needed */
+    right: -2rem; /* Adjust right position as needed */}
 
   .flex-row {
     flex-direction: column; /* Stack items vertically on small screens */
