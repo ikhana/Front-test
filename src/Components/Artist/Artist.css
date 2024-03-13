@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+    .ino {
+      height: auto; /* Set to auto to adjust to the content height */
+      width: 100%;
+    }
+    .artistdiv {
+      width: 300px; /* Ensure the container takes the full width */
+    }
+  }
+  

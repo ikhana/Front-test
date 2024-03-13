@@ -1,0 +1,59 @@
+/* Aboutus.css */
+
+/* General resets if needed */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .glass-effect {
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust for desired opacity */
+    backdrop-filter: blur(16px); /* Adjust blur level as desired */
+    -webkit-backdrop-filter: blur(16px); /* For Safari compatibility */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 40%; /* Control width here; 60% of the parent container */
+    height: 10%; /* Control height here; 80% of the parent container */
+    border-radius: 4rem; /* Control roundness of corners here */
+    position: relative; /* Adjust position relative to the parent */
+    margin: auto; /* Center the glass card in the available space */
+    display: flex; /* Use flexbox to position children */
+    align-items: flex-end; /* Align children to the bottom */
+    justify-content: flex-end; /* Align children to the right */
+  }
+  
+  .about-image {
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Adjust max-width as needed */
+    height: auto; /* Keep height proportional */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    position: relative; /* Position relative to the glass-effect container */
+    bottom: -4rem; /* Adjust bottom position as needed */
+    right: -2rem; /* Adjust right position as needed */}
+  
+  
+  
+  @media screen and (max-width: 480px) {
+    /* Adjustments for mobile responsiveness */
+    .about {
+        height: fit-content;
+    }
+  
+    .flex-row {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .sm-pl-10 {
+      padding-left: 0; /* Remove left padding on small screens */
+    }
+  
+    .w-full {
+      width: 100%; /* Make the image and text containers full-width on small screens */
+    }
+  }
+  
+  /* Ensure z-index is not hiding the particles */
+  .z-10 {
+    z-index: 10; /* This should be higher than the -1 of particles but lower than any modal or overlay */
+  }
+  

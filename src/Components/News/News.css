@@ -1,0 +1,40 @@
+/* News.css */
+.news-container {
+
+  padding: 1rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem;
+  flex: 0 0 auto;
+}
+
+.imgcard {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+}
+
+.animation-container {
+  display: flex;
+  animation: scroll infinite 60s linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .imgcard {
+    width: 2rem;
+    height: 2rem;
+  }
+}

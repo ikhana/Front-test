@@ -1,0 +1,43 @@
+/* FAQSection.css */
+
+.faq-section {
+  background: var(--cybernoir-gradient);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Adjust the max width as needed for a narrow strip */
+}
+
+.faq-item {
+  background-color: rgba(10, 23, 62, 0.8);
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.faq-item:hover {
+  transform: scale(1.03); /* 3D hover effect */
+  background-color: rgba(10, 23, 62, 1); /* Darken background on hover */
+}
+
+.text-cybernoir-50 {
+  color: var(--cybernoir-50);
+}
+
+.text-cybernoir-300 {
+  color: var(--cybernoir-300);
+}
+
+.shadow-glow {
+  box-shadow: 0 4px 6px rgba(255, 163, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .faq-item {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
