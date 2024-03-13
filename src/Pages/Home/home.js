@@ -12,9 +12,9 @@ const Home = () => {
           <p className="header-subtitle">Unlock the world of cryptos with BitWit.</p>
         </div>
         <div className="header-buttons">
-          <button className="header-button">WHITE PAPER</button>
-          <button className="header-button">EXPLORE BITWIT</button>
-        </div>
+  <button className="header-button">WHITE PAPER</button>
+  <button className="header-button header-button-transparent">EXPLORE BITWIT</button>
+</div>
       </div>
     </div>
   );

@@ -43,20 +43,31 @@
   }
   
   .header-button {
-    padding: 8px 16px; /* Adjust padding for a better aspect ratio */
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #ffa500; /*
-/* Continue button styles */
-color: white; /* White text */
-cursor: pointer; /* Pointer cursor on hover */
-transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.header-button:hover {
-background-color: #cc8400; /* Change color on hover */
-}
-
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    border: none;
+    border-radius: 30px; /* Make buttons more rounded */
+    background-color: #ffa500;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .header-button-transparent {
+    background-color: transparent; /* Transparent background */
+    color: #ffa500; /* Color matching the other button */
+    border: 2px solid #ffa500; /* Border to match the color */
+  }
+  
+  .header-button:hover {
+    background-color: #cc8400;
+  }
+  
+  .header-button-transparent:hover {
+    color: white; /* Change text color on hover */
+    background-color: #ffa500; /* Fill background on hover */
+  }
 @media (max-width: 768px) {
     .header-image-container {
       margin-top: -100px;
