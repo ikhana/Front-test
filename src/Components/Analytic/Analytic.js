@@ -23,7 +23,6 @@ ChartJS.register(
   Legend
 );
 
-
 const CryptoAnalysisPage = () => {
   const [selectedScore, setSelectedScore] = useState(null);
 
@@ -32,23 +31,9 @@ const CryptoAnalysisPage = () => {
     datasets: [
       {
         label: 'Analysis Score',
-        data: [90, 85, 80, 45,40,72],
-        backgroundColor: [
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-        ],
-        borderColor: [
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-        ],
+        data: [90, 85, 80, 45, 40, 72],
+        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+        borderColor: 'rgba(255, 206, 86, 1)',
         borderWidth: 1,
       },
     ],
@@ -59,9 +44,15 @@ const CryptoAnalysisPage = () => {
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: '#ffffff',
+        },
       },
       x: {
         beginAtZero: true,
+        ticks: {
+          color: '#ffffff',
+        },
       },
     },
     onClick: (event, elements, chart) => {
@@ -91,7 +82,7 @@ const CryptoAnalysisPage = () => {
     <div >
       <Navbar/>
       <DynamicBackground/>
-      <div className="text-white items-center justify-center p-14 z-30 relative" style={{ backgroundColor: "#0A173E" }}>
+      <div className="text-white items-center justify-center p-14 z-30 relative bg-cybernoir-gradient" >
       
       <h1 className="text-4xl font-bold m-5 font-mono">BitWit - The Crypto Analyst</h1>
       <h2 className='text-center m-6 text-2xl font-mono '>Let me help you analyze the crypto projects and markets as a whole</h2>
@@ -105,7 +96,7 @@ const CryptoAnalysisPage = () => {
       </h2>
       <div className={`grid grid-cols-2 md:grid-cols-2 gap-4 mt-4 m-6`}>
         {data.labels.slice(0, 4).map((label, index) => (
-          <div key={label} className={`bg-indigo-700 p-4 rounded-md shadow-lg col-span-1 md:col-span-1`}>
+          <div key={label} className={`bg-angryduck-500 p-4 rounded-md shadow-lg col-span-1 md:col-span-1`}>
             <h3 className="font-semibold">{label}</h3>
             <p>Score: {cardScores[index]}%</p>
           </div>

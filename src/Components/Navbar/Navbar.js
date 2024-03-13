@@ -57,7 +57,7 @@ export default function Navbar() {
               {/* Logo and title */}
               <div className="flex items-center px-2 lg:px-0">
                 <img
-                  className="h-12 w-12 rounded-full"
+                  className="h-20 w-20 rounded-full"
                   src={owlLogo}
                   alt="BITWIT"
                 />
